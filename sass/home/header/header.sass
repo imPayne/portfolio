@@ -1,0 +1,30 @@
+@use '../../variables'    
+.header
+    z-index: 0
+    &__box
+        position: relative
+        text-align: center
+        &_imageDev
+            width: 100%
+            height: auto
+        h1, h2
+            color: white
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            position: absolute
+        &_name
+            top: 40%
+            left: 32.8%
+            transform: translate(-40%, -50%)
+            font-size: 1.8rem
+            font-family: $headerNameFont
+        &_workInfos
+            top: 45%
+            left: 45%
+            font-size: 3rem
+            font-family: $headerWorkInfosFont
+            transform: translate(-45%, -50%)
+        &_workInfosSubTitle
+            top: 50%
+            left: 32.5%
+            transform: translate(-40%, -50%)
+            font-size: 1.8rem

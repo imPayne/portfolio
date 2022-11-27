@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Sitka";
+  src: url("../assets/fonts/sitka-small-652.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -13,6 +19,93 @@
   margin-right: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.boxNavbar {
+  z-index: 1;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+.boxNavbar__pages {
+  display: flex;
+  flex-direction: flow;
+  justify-items: center;
+  align-items: center;
+}
+.boxNavbar__pages_logoPortfolio {
+  width: 4rem;
+  height: 100%;
+}
+.boxNavbar__pages_boxBtn {
+  margin-left: 35rem;
+  display: flex;
+  flex-direction: flow;
+  justify-items: center;
+  align-items: center;
+  color: red;
+  text-decoration: none;
+  color: inherit;
+}
+.boxNavbar__pages_boxBtn_home, .boxNavbar__pages_boxBtn_parcours, .boxNavbar__pages_boxBtn_about, .boxNavbar__pages_boxBtn_contact {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #707070;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 1.25rem;
+}
+.boxNavbar__pages_boxBtn_homeIcon {
+  width: 2rem;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Sitka";
+  src: url("../assets/fonts/sitka-small-652.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  z-index: 0;
+}
+.header__box {
+  position: relative;
+  text-align: center;
+}
+.header__box_imageDev {
+  width: 100%;
+  height: auto;
+}
+.header__box h1, .header__box h2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+}
+.header__box_name {
+  top: 40%;
+  left: 32.8%;
+  transform: translate(-40%, -50%);
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header__box_workInfos {
+  top: 45%;
+  left: 45%;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium";
+  transform: translate(-45%, -50%);
+}
+.header__box_workInfosSubTitle {
+  top: 50%;
+  left: 32.5%;
+  transform: translate(-40%, -50%);
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

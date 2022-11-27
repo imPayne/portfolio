@@ -1,1 +1,12 @@
+@mixin font($font-family, $font-file)
+    @font-face
+        font-family: $font-family
+        src: url($font-file+'.ttf') format('truetype')
+        font-weight: normal
+        font-style: normal
+@include font('Sitka', '../assets/fonts/sitka-small-652')
+
 $light: #F3F5FD
+$headerNameFont: Arial, Helvetica, sans-serif
+$headerWorkInfosFont: 'Franklin Gothic Medium'
+$sitkaFont: Sitka
