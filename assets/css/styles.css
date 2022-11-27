@@ -1,8 +1,6 @@
 @font-face {
-  font-family: "Sitka";
-  src: url("../assets/fonts/sitka-small-652.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "sitka";
+  src: url("fonts/sitka-small-652.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -66,46 +64,89 @@
 }
 
 @font-face {
-  font-family: "Sitka";
-  src: url("../assets/fonts/sitka-small-652.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "sitka";
+  src: url("fonts/sitka-small-652.ttf") format("truetype");
 }
 .header {
   z-index: 0;
 }
-.header__box {
-  position: relative;
-  text-align: center;
-}
-.header__box_imageDev {
+.header__box_infosTexts {
   width: 100%;
-  height: auto;
-}
-.header__box h1, .header__box h2 {
+  height: 110vh;
+  background-size: cover;
+  background-image: url("../../../assets/images/header_bg_1280_800.png");
+  backgroud-repeat: no-repeat;
+  text-align: left;
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  position: absolute;
+  margin-top: 8rem;
 }
-.header__box_name {
-  top: 40%;
-  left: 32.8%;
-  transform: translate(-40%, -50%);
+.header__box_infosTexts h1, .header__box_infosTexts p {
+  padding-left: 30rem;
+}
+.header__box_infosTexts_name {
+  padding-top: 13rem;
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Sitka;
 }
-.header__box_workInfos {
-  top: 45%;
-  left: 45%;
+.header__box_infosTexts_workInfos {
+  padding-top: 1rem;
   font-size: 3rem;
   font-family: "Franklin Gothic Medium";
-  transform: translate(-45%, -50%);
 }
-.header__box_workInfosSubTitle {
-  top: 50%;
-  left: 32.5%;
-  transform: translate(-40%, -50%);
+.header__box_infosTexts_workInfosSubTitle {
+  padding-top: 2rem;
   font-size: 1.8rem;
+  font-family: Sitka;
+}
+
+.skillsBox {
+  width: 100%;
+  height: 110vh;
+}
+.skillsBox__title {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.skillsBox__languageGrid {
+  margin-left: 5rem;
+  margin-top: 8rem;
+  display: grid;
+  grid: repeat(2, 4fr);
+}
+.skillsBox__languageGrid_c {
+  background-image: url("../../../assets/images/languagesIcons/c_icon.png");
+}
+.skillsBox__languageGrid_htmlCss {
+  background-image: url("../../../assets/images/languagesIcons/html_css_icons.png");
+}
+.skillsBox__languageGrid_php {
+  background-image: url("../../../assets/images/languagesIcons/php_icon.svg");
+}
+.skillsBox__languageGrid_mysql {
+  background-image: url("../../../assets/images/languagesIcons/sql_icon.png");
+}
+.skillsBox__languageGrid_cpp {
+  background-image: url("../../../assets/images/languagesIcons/cpp_icon.png");
+}
+.skillsBox__languageGrid_python {
+  background-image: url("../../../assets/images/languagesIcons/python.png");
+}
+.skillsBox__languageGrid_github {
+  background-image: url("../../../assets/images/languagesIcons/github_icon.png");
+}
+.skillsBox__languageGrid_laravel {
+  background-image: url("../../../assets/images/languagesIcons/laravel_icon.png");
+}
+.skillsBox__languageGrid > div {
+  border: solid 1px red;
+  width: 100%;
+  height: 20rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=styles.css.map */

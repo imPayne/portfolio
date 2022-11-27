@@ -2,29 +2,66 @@
 .header
     z-index: 0
     &__box
-        position: relative
-        text-align: center
-        &_imageDev
+        &_infosTexts
             width: 100%
-            height: auto
-        h1, h2
+            height: 110vh
+            background-size: cover
+            background-image: url("../../../assets/images/header_bg_1280_800.png")
+            backgroud-repeat: no-repeat
+            text-align: left
             color: white
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            position: absolute
-        &_name
-            top: 40%
-            left: 32.8%
-            transform: translate(-40%, -50%)
-            font-size: 1.8rem
-            font-family: $headerNameFont
-        &_workInfos
-            top: 45%
-            left: 45%
-            font-size: 3rem
-            font-family: $headerWorkInfosFont
-            transform: translate(-45%, -50%)
-        &_workInfosSubTitle
-            top: 50%
-            left: 32.5%
-            transform: translate(-40%, -50%)
-            font-size: 1.8rem
+            margin-top: 8rem
+            h1, p
+                padding-left: 30rem
+            &_name
+                padding-top: 13rem
+                font-size: 1.8rem
+                font-family: $sitkaFont
+            &_workInfos
+                padding-top: 1rem
+                font-size: 3rem
+                font-family: $headerWorkInfosFont
+            &_workInfosSubTitle
+                padding-top: 2rem
+                font-size: 1.8rem
+                font-family: $sitkaFont
+.skillsBox
+    width: 100%
+    height: 110vh
+    &__title
+        color: black
+        font-family: variables.$headerNameFont
+        margin-top: 4rem
+        font-size: 2rem
+        font-weight: bold
+        text-align: center
+    &__languageGrid
+        margin-left: 5rem
+        margin-top: 8rem
+        display: grid
+        grid: repeat(2, 4fr)
+        &_c
+            background-image: url('../../../assets/images/languagesIcons/c_icon.png')
+        &_htmlCss
+            background-image: url('../../../assets/images/languagesIcons/html_css_icons.png')
+        &_php
+            background-image: url('../../../assets/images/languagesIcons/php_icon.svg')
+        &_mysql
+            background-image: url('../../../assets/images/languagesIcons/sql_icon.png')
+        &_cpp
+            background-image: url('../../../assets/images/languagesIcons/cpp_icon.png')
+        &_python
+            background-image: url('../../../assets/images/languagesIcons/python.png')
+        &_github
+            background-image: url('../../../assets/images/languagesIcons/github_icon.png')
+        &_laravel
+            background-image: url('../../../assets/images/languagesIcons/laravel_icon.png')
+    &__languageGrid > div
+        border: solid 1px red
+        width: 100%
+        height: 20rem
+        background-size: 100%
+        background-repeat: no-repeat
+        // background-image: url('../../../assets/images/languagesIcons/c_icon.png')
+        
+            
